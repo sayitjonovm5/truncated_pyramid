@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas for Truncated Pyramid</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="icons8-sine-96.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .formula {
+            background-color: #e9ecef;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .formula h2 {
+            color: #007bff;
+        }
+
+        .formula p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .steps {
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .steps ul {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Truncated Pyramid Formulas</h1>
+
+    <div class="formula">
+        <h2>1. Volume of a Truncated Pyramid</h2>
+        <p>
+            The volume of a truncated pyramid can be calculated using the following formula:
+        </p>
+        <p>
+            <strong>Formula:</strong> 
+            \( V = \frac{1}{3} \times h \times (A_1 + A_2 + \sqrt{A_1 \times A_2}) \)
+        </p>
+        <p>
+            Where:
+        </p>
+        <ul>
+            <li><strong>h</strong> = Vertical height of the truncated pyramid (distance between the two parallel bases)</li>
+            <li><strong>A₁</strong> = Area of the lower base</li>
+            <li><strong>A₂</strong> = Area of the upper base</li>
+        </ul>
+    </div>
+
+    <div class="steps">
+        <h2>Steps to Calculate the Volume</h2>
+        <ul>
+            <li>Step 1: Measure the areas of the upper and lower bases, <strong>A₁</strong> and <strong>A₂</strong>.</li>
+            <li>Step 2: Measure the vertical height between the two bases, <strong>h</strong>.</li>
+            <li>Step 3: Add the areas of the two bases: \( A_1 + A_2 \).</li>
+            <li>Step 4: Multiply the height by the sum of the areas and the square root of their product:
+                \[
+                h \times (A_1 + A_2 + \sqrt{A_1 \times A_2})
+                \]
+            </li>
+            <li>Step 5: Divide the result by 3 to get the volume:
+                \[
+                V = \frac{1}{3} \times h \times (A_1 + A_2 + \sqrt{A_1 \times A_2})
+                \]
+            </li>
+        </ul>
+    </div>
+
+    <div class="formula">
+        <h2>2. Surface Area of a Truncated Pyramid</h2>
+        <p>
+            The surface area of a truncated pyramid is the sum of the areas of both bases and the lateral area. The formula is:
+        </p>
+        <p>
+            <strong>Formula:</strong> 
+            \( A = A_1 + A_2 + \text{Lateral Area} \)
+        </p>
+        <p>
+            The lateral area is calculated using:
+        </p>
+        <p>
+            \[ \text{Lateral Area} = \frac{1}{2} \times (P_1 + P_2) \times l \]
+        </p>
+        <p>
+            Where:
+        </p>
+        <ul>
+            <li><strong>A₁</strong> = Area of the lower base</li>
+            <li><strong>A₂</strong> = Area of the upper base</li>
+            <li><strong>P₁</strong> = Perimeter of the lower base</li>
+            <li><strong>P₂</strong> = Perimeter of the upper base</li>
+            <li><strong>l</strong> = Slant height of the truncated pyramid</li>
+        </ul>
+    </div>
+
+    <div class="formula">
+        <h2>3. Slant Height of a Truncated Pyramid (using trigonometry)</h2>
+        <p>
+            The slant height of a truncated pyramid can be calculated using trigonometry if you know the height and the difference between the base widths (if rectangular) or diameters (if circular):
+        </p>
+        <p>
+            <strong>Formula:</strong> 
+            \( l = \sqrt{h^2 + \left(\frac{d_1 - d_2}{2}\right)^2} \)
+        </p>
+        <p>
+            Where:
+        </p>
+        <ul>
+            <li><strong>h</strong> = Vertical height of the truncated pyramid</li>
+            <li><strong>d₁</strong> = Diameter or width of the lower base</li>
+            <li><strong>d₂</strong> = Diameter or width of the upper base</li>
+        </ul>
+    </div>
+
+    <div class="formula">
+        <h2>4. Height of a Truncated Pyramid (using trigonometry)</h2>
+        <p>
+            If the slant height and the widths of the bases are known, the vertical height can be calculated as:
+        </p>
+        <p>
+            <strong>Formula:</strong> 
+            \( h = \sqrt{l^2 - \left(\frac{d_1 - d_2}{2}\right)^2} \)
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
